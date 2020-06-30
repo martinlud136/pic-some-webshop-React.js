@@ -11,7 +11,6 @@ function ContextProvider({children}){
             .then(data => setAllPhotos(data))
     },[])
 
-    console.log(allPhotos)
     return(
         <Context.Provider value={{allPhotos}}>
             {children}
